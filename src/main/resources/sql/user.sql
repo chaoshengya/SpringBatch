@@ -1,0 +1,50 @@
+-- /*
+--  Navicat Premium Data Transfer
+--
+--  Source Server         : 本地-mysql8.0
+--  Source Server Type    : MySQL
+--  Source Server Version : 80031
+--  Source Host           : localhost:3306
+--  Source Schema         : mytest
+--
+--  Target Server Type    : MySQL
+--  Target Server Version : 80031
+--  File Encoding         : 65001
+--
+--  Date: 09/07/2023 23:45:11
+-- */
+--
+-- SET NAMES utf8mb4;
+-- SET FOREIGN_KEY_CHECKS = 0;
+--
+--
+-- -- ----------------------------
+-- -- Table structure for user
+-- -- ----------------------------
+-- DROP TABLE IF EXISTS `user`;
+-- CREATE TABLE `user` (
+--                         `id` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+--                         `name` varchar(32) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+--                         PRIMARY KEY (`id`)
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+--
+-- -- ----------------------------
+-- -- Records of user
+-- -- ----------------------------
+-- BEGIN;
+-- INSERT INTO `user` VALUES ('ls', '李斯');
+-- INSERT INTO `user` VALUES ('wg', '王关');
+-- INSERT INTO `user` VALUES ('zs', '张山');
+-- COMMIT;
+--
+-- -- ----------------------------
+-- -- Table structure for user_to
+-- -- ----------------------------
+-- DROP TABLE IF EXISTS `user_to`;
+-- CREATE TABLE `user_to` (
+--                            `id` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+--                            `name` varchar(32) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+--                            PRIMARY KEY (`id`)
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+--
+-- SET FOREIGN_KEY_CHECKS = 1;
